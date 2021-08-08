@@ -3,8 +3,9 @@ Virtual DJ - Controller template for Novation Launch Control XL
 
 Todo:
 
-Import similar template for adjustment.
-Work with MIDIOX and VDJ developer docs to generate template
+*Import similar template for adjustment.
+*Work with MIDIOX and VDJ developer docs to generate template
+*Document in readme, and cleanup.
 
 Use case for this template:
 ------------------------------------------------------
@@ -30,7 +31,7 @@ This will be tested with the following components:
 - Launchpad X
 
 
-Launchcontrol layout
+LaunchcontrolXL layout
 ------------------------------------------------------
 
 Columns
@@ -48,6 +49,51 @@ Rows
 - Solo - Organized with bottom buttons
 - Record Arm - Organized with bottom buttons
 
-Document in readme.
+
+
+The following directories are reference, and not required for deploy:
+./img
+./example
+./manual
+
+
+
+Controller Definition & Mapping files for VirtualDJ 8
+------------------------------------------------------------------------------------------------------------
+Definition
+
+The definition files are standard XML files, and must be installed in the MyDocuments/VirtualDJ/Devices/ folder on PC or /users/YOURNAME/Documents/VirtualDJ/Devices on Mac.
+
+The syntax of the definition file depends on the interface used (HID or MIDI):
+Controller Definition syntax for MIDI
+Controller Definition syntax for HID
+
+
+Note : If you wish to build a custom definition for a natively supported Controller, you will need to name the definition file as force-whatevername.xml in order the built-in definition to be bypassed.
+
+
+Mapping file
+
+The mapping files are also standard XML files, and must be installed in the MyDocuments/VirtualDJ/Mappers/ folder on PC or /users/YOURNAME/Documents/VirtualDJ/Mappers/ on Mac.
+
+Mapping files for the built-in (Native supported) controllers will only appear in this folder if they have been modified by the user via CONFIG -> Mappers in VirtualDJ.
+Controller Mapping syntax
+
+------------------------------------------------------------------------------------------------------------
+
+
+Example XML retrieved from user: PhilW
+Discoverd at this link:
+http://www.virtualdj.com/forums/227508/VirtualDJ_Plugins/Novation_LaunchControl_XL_Definition_File_and_Mapper.html
+
+Weill use this to kickstart the custom template
+
+
+
+Notes:
+
+./img contains images of device and current mapping.
+./manual contains dev manual from novation, and any associated manuals from VDJ
+./example contains example code for initial guidance
 
 
