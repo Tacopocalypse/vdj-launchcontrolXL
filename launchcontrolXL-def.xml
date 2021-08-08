@@ -1,0 +1,47 @@
+<device name="launchcontrolXL" author="Tacopocalypse" description="Novation Launch Control XL" version="800" type="MIDI" vid="0x1235" pid="0x0061" decks="4" padColumns="8" padRows="2" padSides="1">
+
+<!-- Do we do 8 decks - one for each track or do we do 8 pad columns - or both 
+
+    How am I going to split left 4 tracks for volume and right 4 for effects
+	will probably start with 8 decks and take it from there
+-->
+
+<!-- Colours
+	Green in first nybble, red in second but need to add 12 (0Ch) to second nybble for actual value
+	First number is the raw green and red, second adds 12 (0Ch) to low nybble, next is colour description, then the name from Novation for the colour
+	00 0C black (off off)
+	01 0D low red (red low)
+	02 0E med red
+	03 0F high red (red full)
+	10 1C low green (green low)
+	11 1D low green low red (amber low)
+	12 1E low green med red
+	13 1F low green high red
+	20 2C med green
+	21 2D med green low red
+	22 2E med green med red
+	23 2F med green high red
+	30 3C high green (green full)
+	31 3D high green low red
+	32 3E high green med red (yellow full)
+	33 3F high green high red (amber full)
+-->
+
+<!-- MIDI Element Definitions -->
+
+<!-- Track 1 -->
+
+
+
+
+<!-- Track 2 -->
+
+
+
+<!-- EXAMPLES BELOW Buttons-->
+<button note="0x34" name="PLAY_PAUSE" deck="1" channel="1" />
+<!-- Sliders-->
+<slider ccmsb="0x08" cclsb="0x28" name="LEVEL" deck="1" channel="0"/>
+
+
+</device>
