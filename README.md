@@ -29,6 +29,25 @@ This will be tested with the following components:
 - Novation Launch Control XL
 - Launchpad X
 
+
+Launchcontrol layout
+------------------------------------------------------
+
+Columns
+- 8 tracks
+    - Each track has 3 'analog' knobs
+    - 1 slider
+	- 2 buttons
+
+Rows
+- User button / Factory button (2 buttons - configured as 1 toggle
+- Send Select (2 buttons / up & down arrows on button)
+- Track/Device Select (2 buttons / left & right arrows on button)
+- Device button
+- Mute - Organized with bottom buttons
+- Solo - Organized with bottom buttons
+- Record Arm - Organized with bottom buttons
+
 Document in readme.
 
 
