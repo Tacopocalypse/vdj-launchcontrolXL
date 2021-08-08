@@ -95,5 +95,7 @@ Notes:
 ./img contains images of device and current mapping.
 ./manual contains dev manual from novation, and any associated manuals from VDJ
 ./example contains example code for initial guidance
+./maps -- Add readme and altered mappings in
+
 
 

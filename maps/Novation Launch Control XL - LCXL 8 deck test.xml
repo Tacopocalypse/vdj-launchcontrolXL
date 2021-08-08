@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper device="LaunchControlXL" version="850" date="2021-08-08">
+	<map value="TrackFader1" action="level" />
+	<map value="TrackFader2" action="level" />
+	<map value="SendA1" action="effect_slider 1 1" />
+	<map value="SendB1" action="effect_slider 2 1" />
+	<map value="PanDevice1" action="effect_slider 3 1" />
+	<map value="TrackFader3" action="level" />
+	<map value="TrackFader4" action="level" />
+	<map value="SendA2" action="effect_slider 1 1" />
+	<map value="SendB2" action="effect_slider 2 1" />
+	<map value="PanDevice2" action="effect_slider 3 1" />
+	<map value="SendA3" action="effect_slider 1 1" />
+	<map value="SendB3" action="effect_slider 2 1" />
+	<map value="PanDevice3" action="effect_slider 3 1" />
+	<map value="SendA4" action="effect_slider 1 1" />
+	<map value="PanDevice4" action="effect_slider 3 1" />
+	<map value="SendB4" action="effect_slider 2 1" />
+</mapper>

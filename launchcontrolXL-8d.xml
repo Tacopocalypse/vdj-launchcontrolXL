@@ -1,0 +1,100 @@
+<device name="LaunchControlXL" author="Tacopocalypse" description="Novation Launch Control XL" version="850" type="MIDI" vid="0x1235" pid="0x0061" decks="8">
+
+<button note="0x69" name="Device" />
+<button note="0x6A" name="Mute" />
+<button note="0x6B" name="Solo" />
+<button note="0x6C" name="RecordArm" />
+
+<button note="0x29" name="TrackFocus1" deck="1" />
+<button note="0x2A" name="TrackFocus2" deck="2" />
+<button note="0x2B" name="TrackFocus3" deck="3" />
+<button note="0x2C" name="TrackFocus4" deck="4" />
+<button note="0x39" name="TrackFocus5" deck="5" />
+<button note="0x3A" name="TrackFocus6" deck="6" />
+<button note="0x3B" name="TrackFocus7" deck="7" />
+<button note="0x3C" name="TrackFocus8" deck="8" />
+
+<button note="0x49" name="TrackControl1" deck="1" />
+<button note="0x4A" name="TrackControl2" deck="2" />
+<button note="0x4B" name="TrackControl3" deck="3" />
+<button note="0x4C" name="TrackControl4" deck="4" />
+<button note="0x59" name="TrackControl5" deck="5" />
+<button note="0x5A" name="TrackControl6" deck="6" />
+<button note="0x5B" name="TrackControl7" deck="7" />
+<button note="0x5C" name="TrackControl8" deck="8" />
+
+<!-- Colours
+	Green in first nybble, red in second but need to add 12 (0Ch) to second nybble for actual value
+	First number is the raw green and red, second adds 12 (0Ch) to low nybble, next is colour description, then the name from Novation for the colour
+	00 0C black (off off)
+	01 0D low red (red low)
+	02 0E med red
+	03 0F high red (red full)
+	10 1C low green (green low)
+	11 1D low green low red (amber low)
+	12 1E low green med red
+	13 1F low green high red
+	20 2C med green
+	21 2D med green low red
+	22 2E med green med red
+	23 2F med green high red
+	30 3C high green (green full)
+	31 3D high green low red
+	32 3E high green med red (yellow full)
+	33 3F high green high red (amber full)
+-->
+<color note="0x49" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED1" deck="1" />
+<color note="0x4A" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED2" deck="2" />
+<color note="0x4B" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED3" deck="3" />
+<color note="0x4C" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED4" deck="4" />
+<color note="0x59" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED5" deck="5" />
+<color note="0x5A" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED6" deck="6" />
+<color note="0x5B" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED7" deck="7" />
+<color note="0x5C" values="0x0C=#000000,0x0D=#400000,0x0F=#FF0000,0x1C=#004000,0x1D=#404000,0x3C=#00FF00,0x3E=C0FF00,0x3F=FFFF00" name="TrackControlLED8" deck="8" />
+
+<led note="0x29" value="0x3F" name="TrackFocusLED1" default="TrackFocus1" deck="1" />
+<led note="0x2A" value="0x3F" name="TrackFocusLED1" default="TrackFocus2" deck="2" />
+<led note="0x2B" value="0x3F" name="TrackFocusLED1" default="TrackFocus3" deck="3" />
+<led note="0x2C" value="0x3F" name="TrackFocusLED1" default="TrackFocus4" deck="4" />
+<led note="0x39" value="0x3F" name="TrackFocusLED1" default="TrackFocus5" deck="5" />
+<led note="0x3A" value="0x3F" name="TrackFocusLED1" default="TrackFocus6" deck="6" />
+<led note="0x3B" value="0x3F" name="TrackFocusLED1" default="TrackFocus7" deck="7" />
+<led note="0x3C" value="0x3F" name="TrackFocusLED1" default="TrackFocus8" deck="8" />
+
+<slider cc="0x0D" name="SendA1" zero="0x40" deck="1" />
+<slider cc="0x0E" name="SendA2" zero="0x40" deck="2" />
+<slider cc="0x0F" name="SendA3" zero="0x40" deck="3" />
+<slider cc="0x10" name="SendA4" zero="0x40" deck="4" />
+<slider cc="0x11" name="SendA5" zero="0x40" deck="5" />
+<slider cc="0x12" name="SendA6" zero="0x40" deck="6" />
+<slider cc="0x13" name="SendA7" zero="0x40" deck="7" />
+<slider cc="0x14" name="SendA8" zero="0x40" deck="8" />
+
+<slider cc="0x1D" name="SendB1" zero="0x40" deck="1" />
+<slider cc="0x1E" name="SendB2" zero="0x40" deck="2" />
+<slider cc="0x1F" name="SendB3" zero="0x40" deck="3" />
+<slider cc="0x10" name="SendB4" zero="0x40" deck="4" />
+<slider cc="0x11" name="SendB5" zero="0x40" deck="5" />
+<slider cc="0x12" name="SendB6" zero="0x40" deck="6" />
+<slider cc="0x13" name="SendB7" zero="0x40" deck="7" />
+<slider cc="0x14" name="SendB8" zero="0x40" deck="8" />
+
+<slider cc="0x31" name="PanDevice1" zero="0x40" deck="1" />
+<slider cc="0x32" name="PanDevice2" zero="0x40" deck="2" />
+<slider cc="0x33" name="PanDevice3" zero="0x40" deck="3" />
+<slider cc="0x34" name="PanDevice4" zero="0x40" deck="4" />
+<slider cc="0x35" name="PanDevice5" zero="0x40" deck="5" />
+<slider cc="0x36" name="PanDevice6" zero="0x40" deck="6" />
+<slider cc="0x37" name="PanDevice7" zero="0x40" deck="7" />
+<slider cc="0x38" name="PanDevice8" zero="0x40" deck="8" />
+
+<slider cc="0x4D" name="TrackFader1" deck="1" />
+<slider cc="0x4E" name="TrackFader2" deck="2" />
+<slider cc="0x4F" name="TrackFader3" deck="3" />
+<slider cc="0x50" name="TrackFader4" deck="4" />
+<slider cc="0x51" name="TrackFader5" deck="5" />
+<slider cc="0x52" name="TrackFader6" deck="6" />
+<slider cc="0x53" name="TrackFader7" deck="7" />
+<slider cc="0x54" name="TrackFader8" deck="8" />
+
+</device>

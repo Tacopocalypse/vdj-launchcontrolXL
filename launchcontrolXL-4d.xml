@@ -1,4 +1,4 @@
-<device name="LaunchControlXL" author="Tacopocalypse" description="Novation Launch Control XL" version="800" type="MIDI" vid="0x1235" pid="0x0061" decks="8">
+<device name="LaunchControlXL" author="Tacopocalypse" description="Novation Launch Control XL" version="850" type="MIDI" vid="0x1235" pid="0x0061" decks="8">
 
 <button note="0x69" name="Device" />
 <button note="0x6A" name="Mute" />
